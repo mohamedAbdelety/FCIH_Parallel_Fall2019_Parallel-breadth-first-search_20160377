@@ -42,7 +42,9 @@ We would like to extend our thanks to the following sponsors for helping fund on
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- محمد محمود عبدالعاطى 20160377
+- مصطفي عمر محمد 20160426
+- احمد رمضان احمد 20160017
 
 
 ## License
