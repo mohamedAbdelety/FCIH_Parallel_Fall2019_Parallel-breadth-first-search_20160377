@@ -1,4 +1,4 @@
-<h2 align="center"> Serail_Parallel BFS  </h2>
+<h1 align="center"> Serail_Parallel <span style="color:red">BFS</span>  </h1>
 
 
 
