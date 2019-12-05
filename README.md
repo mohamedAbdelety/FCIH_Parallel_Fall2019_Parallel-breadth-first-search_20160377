@@ -1,4 +1,4 @@
-<p align="center"> Serail_Parallel BFS  </p>
+<h2 align="center"> Serail_Parallel BFS  </h2>
 
 
 
