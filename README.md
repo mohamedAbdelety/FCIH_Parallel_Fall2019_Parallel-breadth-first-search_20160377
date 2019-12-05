@@ -1,5 +1,5 @@
-<h1 align="center"> Serail_Parallel <span style="color:red">BFS</span>  </h1>
-
+<h1 align="center"> Serail_Parallel <span style="color:#f00"> BFS </span>  </h1>
+<br>
 
 
 ## About Laravel
