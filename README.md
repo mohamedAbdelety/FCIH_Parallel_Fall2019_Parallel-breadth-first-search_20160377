@@ -18,6 +18,18 @@ we reapet this steps with every vertex in queue until queue became empty.
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs1.png" width="300px">   <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs2.png" width="300px">
 
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs3.png" width="300px">   <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs4.png" width="300px">
+
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs5.png" width="300px">   <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs6.png" width="300px">
+
+
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs7.png" width="300px">   <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs8.png" width="300px">
+
+
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs9.png" width="300px">   <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs10.png" width="300px">
+
+
+
 
 ## Contributing
 
