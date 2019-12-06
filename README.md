@@ -17,7 +17,7 @@ after push neighbor of vertex we pop this vertex.
 we reapet this steps with every vertex in queue until queue became empty.
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs1.png">
-
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs2.png">
 
 ## Contributing
 
