@@ -16,8 +16,8 @@ we start from source vertex first step push source vertex to queue and make this
 after push neighbor of vertex we pop this vertex.
 we reapet this steps with every vertex in queue until queue became empty.
 
-<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs1.png" width="200px"><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs2.png" width="200px">
-<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs2.png" width="200px">
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs1.png" width="300px"><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs2.png" width="300px">
+
 
 ## Contributing
 
