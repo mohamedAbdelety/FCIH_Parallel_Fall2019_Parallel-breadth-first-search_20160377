@@ -2,9 +2,9 @@
 <br>
 
 
-## About Laravel
+## About BFS
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+The breadth-first-search algorithm is a way to explore the vertexes of a graph layer by layer. It is a basic algorithm in graph theory which can be used as a part of other graph algorithms
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
