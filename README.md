@@ -31,6 +31,14 @@ we reapet this steps with every vertex in queue until queue became empty.
 
 
 ## Parallel breadth-first search
+There is more than one way to implement Parallel breadth-first search 
+- Parallel Random Access Machine (PRAM) 
+- Parallel BFS with shared memory
+- Parallel BFS with distributed memory
+-- 1
+-- 2
+
+
 
 
 
