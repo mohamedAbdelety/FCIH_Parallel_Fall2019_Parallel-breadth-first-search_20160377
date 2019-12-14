@@ -34,11 +34,13 @@ we reapet this steps with every vertex in queue until queue became empty.
 There is more than one way to implement Parallel breadth-first search 
 - Parallel Random Access Machine (PRAM) 
 - Parallel BFS with shared memory
-- Parallel BFS with distributed memory
--- 1
--- 2
+- Parallel BFS with distributed memory 1-D Partitioning
+- Parallel BFS with distributed memory 2-D Partitioning
+
+here we used Parallel Random Access Machine (PRAM) approach
 
 
+## Parallel Random Access Machine (PRAM)
 
 
 
