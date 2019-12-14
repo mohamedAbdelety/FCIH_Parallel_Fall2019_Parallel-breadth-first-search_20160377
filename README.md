@@ -42,6 +42,9 @@ here we used Parallel Random Access Machine (PRAM) approach
 
 ## Parallel Random Access Machine (PRAM)
 
+As a simple and intuitive solution, in this approach we execute the code is responsiable of bring neighbours nodes that not visited, put them in next frontier ,update this nodes through make them visited in parallel.
+In Parallel Random Access Machine (PRAM) model consists of multiple processors, they share the memory together.
+However, there are problems in this simple parallelization. the distance-checking and distance-updating operations introduce two benign races. The reason of race is that a neighbor of one vertex can also be the neighbor of another vertex in the frontier.
 
 
 
