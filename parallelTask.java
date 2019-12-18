@@ -14,39 +14,37 @@ import java.util.concurrent.CountDownLatch;
  * @author Mohamed
  */
 public class parallelTask implements Runnable{
-    Iterator<Integer> i ;
+   Iterator<Integer> i ;
     boolean visited[];
     private CountDownLatch endController;
-    private  int[] queue;
-    private int indexQ;
+    private  LinkedList<Integer> queue;
+  
     
-    public parallelTask(Iterator<Integer> i,CountDownLatch endController, boolean visited[], int[] queue,int indexQ){
+    public parallelTask(Iterator<Integer> i,CountDownLatch endController, boolean visited[], LinkedList<Integer> queue){
         this.i = i;
         this.endController = endController;
         this.visited = visited;
         this.queue = queue;
-        this.indexQ = indexQ;
+       
     }
     
     
     @Override
     public void run() {
-           
+        
         while (i.hasNext()) 
         { 
                 int n = i.next(); 
-                
                 if (!visited[n]) 
                 { 
                     visited[n] = true; 
-                    queue[indexQ] = n;
-                    indexQ++;
-                } 
+                    queue.add(n);
+                }
+                
         }
         
-        
         endController.countDown();
+      
     }
-    
     
 }
