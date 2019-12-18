@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package abd.el3atyanew;
+package PBFS;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -45,12 +45,8 @@ public class PBFS {
     
     
     
-    
-    
-    
-    
-    
     public int getSize(int source) {
+        
         int size = 1;
         boolean visited2[] = new boolean[this.v];
         visited2[source] = true;
@@ -90,34 +86,30 @@ public class PBFS {
     
     public LinkedList<Integer>  parallel_BFS(int source) {
         int x = getSize(source);
-        CountDownLatch endController = new CountDownLatch(x);
+        CountDownLatch endController = new CountDownLatch(numThreads);
 
         LinkedList<Integer> result = new LinkedList<Integer>();
        
         boolean visited[] = new boolean[this.v];
 
         // Create a queue for BFS 
-        int[] queue = new int[x];
-        int indexQ = 1;
-        for(int i = 0;i<x;i++){
-            queue[i] = -1;
-        }
+        LinkedList<Integer> queue = new LinkedList<Integer>();
+       
+   
 
         // Mark the current node as visited and enqueue it 
         visited[source] = true;
-        int q = 0;
-        queue[q] = source;
+        queue.add(source);
         
         for (int j = 0; j < x; j++) {
             
             boolean cheak = true;
             while (cheak) {
                 
-                if (queue[q] != -1) {
-                    
-                    int vertx = queue[q];
-                    q++;
-                    
+                if (queue.size() > 0) {
+                    try{
+                    int vertx = queue.poll();
+                 
                     result.add(vertx);
                    
                     Iterator<Integer> i = adj[vertx].listIterator();
@@ -128,10 +120,13 @@ public class PBFS {
                         { zx +=1 ; } 
                     }
                     
-                    
-                    parallelTask task = new parallelTask(i, endController, visited, queue,indexQ);
-                    executor.execute(task);
-                    indexQ += zx;
+                    if(zx > 0){
+                        parallelTask task = new parallelTask(i, endController, visited, queue);
+                        executor.execute(task);
+                    } 
+                    }catch(Exception e){
+                        System.out.println("Exception");
+                    }
                     cheak = false;
                 }
             }
